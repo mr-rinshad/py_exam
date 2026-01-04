@@ -1,13 +1,9 @@
-text = input("Enter text: ")
+text=input("enter text : ").split()
+count ={}
 
-words = text.split()
-count = {}
-
-for w in words:
+for w in text:
     if w in count:
-        count[w] += 1
+        count[w]+=1
     else:
-        count[w] = 1
-
+        count[w]=1
 print(count)
-
